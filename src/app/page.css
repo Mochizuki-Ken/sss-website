@@ -1,0 +1,134 @@
+
+.Home_Main{
+    background-color: rgb(255, 255, 255);
+}
+  
+.Home_Main .content_div{
+    padding: 20px;
+    gap: 20px;
+}
+
+.Home_Main .row0{
+    animation: SlideLeft 0.8s;
+    width: 100%;
+    gap: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(219, 126, 79);
+}
+
+.Home_Main .row0 .title{
+    color: black;
+    border-bottom: 3px solid black;
+    font-size: 35px;
+}
+
+.Home_Main .row0 .bottom_div{
+    transition: 0.2s;
+    background-color: rgb(219, 126, 79);
+    width: 100%;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 3px 3px rgb(201, 112, 77);
+}
+
+.Home_Main .row0 .bottom_div:hover{
+    transition: 0.2s;
+    width: 60%;
+    background-color: rgb(241, 160, 110);
+}
+
+.Home_Main .row0 .bottom_div .Link{
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.Home_Main .row1{
+    animation: SlideRight 0.8s;
+    gap: 15%;
+    color: black;
+    width: 100%;
+    border-bottom: 1px solid rgb(219, 97, 72);
+
+}
+
+.Home_Main .row1 .left{
+    gap: 30px;
+}
+
+.Home_Main .row1 .Logo_Img{
+    width: 25vh;
+    height: auto;
+    border-radius: 50px;
+    /* border: 4px solid rgb(215, 131, 29); */
+}
+
+.Home_Main .row1 .basic_intro_div{
+    gap: 10px;
+    color: rgb(238, 119, 59);
+    border-left: 4px solid rgb(235, 141, 65);
+    padding-left: 20px;
+    align-items: flex-start;
+}
+
+.Home_Main .row1 .basic_intro_div h1{
+    font-size: 40px;
+    color: rgb(238, 119, 59);
+}
+
+.Home_Main .row1 .right{
+    gap: 10px;
+}
+
+.Home_Main .row1 .right p{
+    font-size: xx-large;
+    color: rgb(224, 118, 32);
+    font-weight: 600;
+}
+
+.Home_Main .row1 .right .Link{
+    transition: 0.2s;
+    border: 3px solid rgb(224, 118, 32);
+    padding: 5px 10px;
+    color: rgb(224, 118, 32);
+    font-size: x-large;
+}
+
+.Home_Main .row1 .right .Link:hover{
+    transition: 0.2s;
+    background-color: rgb(222, 113, 85);
+    color: white;
+}
+
+.Home_Main .row2{
+    animation: SlideLeft 0.8s;
+    gap: 20px;
+    color: black;
+    width: 100%;
+
+}
+
+.Home_Main .row2 .t{
+    font-size: 35px;
+    border-bottom: 4px solid black;
+}
+
+.Home_Main .row2 .row{
+    gap: 50px;
+}
+
+@media  (max-width: 600px) {
+    .Home_Main .row2 .t{
+        font-size: large;
+        border-bottom: 4px solid black;
+    }
+    .Home_Main .row1 .basic_intro_div h1{
+        font-size: x-large;
+        color: rgb(238, 119, 59);
+    }
+    .Home_Main .row1 {
+        flex-direction: column;
+        padding: 30px;
+
+    }
+  }

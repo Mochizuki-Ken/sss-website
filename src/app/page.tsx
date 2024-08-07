@@ -1,95 +1,81 @@
+"use client"
 import Image from "next/image";
 import styles from "./page.module.css";
+import '@/app/page.css'
+
+import  Carousel  from "@/component/Carousel";
+import PersonProfile from "@/component/Info/PersonProfile";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className='Home_Main'>
+
+      <div className='content_div flex_column_jc_strat_ai_center'>
+
+        <div className="row0 flex_column_jc_center_ai_center">
+
+          <h1 className="title">最新消息</h1>
+
+          <Carousel mode={1}/>
+
+          <div className="bottom_div flex_column_jc_center_ai_center">
+            <Link className="Link" href={"/news"}>更多消息</Link>
+          </div>
+
         </div>
+
+        <div className='row1 flex_row_jc_center_ai_center'>
+
+          <div className="left flex_row_jc_center_ai_center">
+
+            <Image src={require("@/media/Logo.jpg")} alt="" className="Logo_Img"/>
+
+            <div className='basic_intro_div flex_column_jc_center_ai_center'>
+
+              <h1>衛誠護動 - 3S</h1>
+
+              <h2>Seamless <br/> Seek <br/> Serve</h2>
+
+            </div>
+
+          </div>
+
+          <div className="right flex_column_jc_center_ai_center">
+
+            <p>
+              衛誠護動成立於2023年
+            </p>
+
+            <div className="flex_row_jc_center_ai_center" style={{gap:'10px'}}>
+              <Link className="Link" href={"/whoweare"}>Who We Are</Link>
+              <Link className="Link" href={"/whatwedo"}>What We Do</Link>
+            </div>
+
+          </div>
+
+          
+
+        </div>
+
+        <div className='row2 flex_column_jc_center_ai_center'>
+          
+          <h2 className="t">Founder</h2>
+
+          <div className="row flex_row_jc_center_ai_center">
+
+            {/* <PersonProfile ImageUrl="1.jpg" Name="Steve Jobs" Intro="Founder"/> */}
+
+            <PersonProfile ImageUrl="1.jpg" Name="Andrey" Intro="Founder"/>
+
+            {/* <PersonProfile ImageUrl="1.jpg" Name="Steve Jobs" Intro="Founder"/> */}
+
+          </div>
+
+        </div>
+
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
     </main>
   );
 }

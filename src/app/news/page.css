@@ -1,0 +1,9 @@
+.News_Main{
+    gap: 20px;
+    padding: 20px;
+}
+
+.News_Main .page_title{
+    font-size: 35px;
+    color: rgb(219, 97, 72);
+}

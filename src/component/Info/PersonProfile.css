@@ -1,0 +1,29 @@
+.PersonProfile_Main_Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.PersonProfile_Main_Div .img{
+    border-radius: 30px;
+    width: 260px;
+    height: auto;
+}
+
+.PersonProfile_Main_Div h3{
+    width: 50%;
+    text-align: center;
+}
+
+@media  (max-width: 600px) {
+    .PersonProfile_Main_Div h3{
+        width: 100%;
+    }
+    .PersonProfile_Main_Div .img{
+        border-radius: 30px;
+        width: 170px;
+        height: auto;
+    }
+}

@@ -1,0 +1,29 @@
+.Carousel_Main_Div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 5px;
+    gap: 5px;
+}
+
+.Carousel_Main_Div .image{
+    height: 25vh;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 3px 3px rgb(83, 83, 83);
+}
+
+@media  (max-width: 600px) {
+    h1{
+        font-size: large;
+    }
+    h2{
+        font-size: large;
+    }
+    label{
+        font-size: large;
+    }
+  }

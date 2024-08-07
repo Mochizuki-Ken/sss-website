@@ -1,0 +1,82 @@
+.WhatWeDo_Main{
+    padding: 20px;
+    gap: 20px;
+}
+
+.WhatWeDo_Main .page_title{
+    font-size: 35px;
+    color: rgb(219, 97, 72);
+}
+
+.WhatWeDo_Main .carousel_area{
+    animation: SlideLeft 0.8s;
+
+}
+.WhatWeDo_Main .intro{
+    animation: SlideRight 0.8s;
+    width: 100%;
+    border-bottom: 3px solid rgb(219, 97, 72);
+    padding: 20px;
+    gap: 10px;
+}
+
+.WhatWeDo_Main .intro p{
+    font-size: 28px;
+    color: rgb(219, 97, 72);
+    font-weight: 600;
+}
+
+.WhatWeDo_Main .intro .Link{
+    transition: 0.2s;
+    font-size: x-large;
+    background-color: rgb(219, 97, 72);
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.WhatWeDo_Main .intro .Link:hover{
+    transition: 0.2s;
+    width: 60%;
+    background-color: rgba(219, 97, 72, 0.746);
+}
+
+.WhatWeDo_Main .vision{
+    animation: SlideLeft 0.8s;
+    border-bottom: 3px solid rgb(219, 97, 72);
+    padding: 20px;
+}
+
+.WhatWeDo_Main .vision h1{
+    font-size: 45px;
+    color: rgb(219, 97, 72);
+}
+
+.WhatWeDo_Main .vision p{
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(219, 97, 72);
+}
+
+@media  (max-width: 600px) {
+    .WhatWeDo_Main .intro p{
+        font-size: large;
+    }
+    .WhatWeDo_Main .intro .Link{
+        color:white;
+        font-size: large;
+    }
+    .WhatWeDo_Main .vision h1{
+        font-size: xx-large;
+    }
+    
+    .WhatWeDo_Main .vision p{
+        font-size: large;
+    }
+
+    .WhatWeDo_Main{
+        padding: 20px 0;
+    }
+  }

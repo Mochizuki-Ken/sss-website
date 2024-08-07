@@ -1,0 +1,68 @@
+.WhoWeAre_Main{
+    gap: 20px;
+    padding: 20px;
+}
+
+.WhoWeAre_Main .page_title{
+    font-size: 35px;
+    color: rgb(219, 97, 72);
+}
+
+.WhoWeAre_Main .logo_area{
+    animation: SlideLeft 0.8s;
+    gap: 30px;
+    width: 100%;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+.WhoWeAre_Main .logo_area .Logo_Img{
+    width: 250px;
+    height: auto;
+    border-radius: 40px;
+}
+
+.WhoWeAre_Main .logo_area .basic_intro_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-left: 4px solid rgb(219, 97, 72);
+    padding-left: 20px;
+    color: rgb(219, 97, 72);
+}
+
+.WhoWeAre_Main .intro{
+    animation: SlideRight 0.8s;
+    width: 100%;
+    border-bottom: 3px solid rgb(219, 97, 72);
+    padding-bottom: 20px;
+}
+
+.WhoWeAre_Main .intro p{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    /* text-align: center; */
+    color: rgba(219, 97, 72, 0.691);
+}
+
+.WhoWeAre_Main .Founders_Div{
+    animation: SlideLeft 0.8s;
+    gap: 20px;
+}
+
+.WhoWeAre_Main .Founders_Div h2{
+    font-size: xx-large;
+    border-bottom: 4px solid black;
+    color: black;
+}
+
+@media  (max-width: 600px) {
+    .WhoWeAre_Main .intro p{
+        font-size: large;
+    }
+  }
